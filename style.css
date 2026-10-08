@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* --------------FAIXA DE PRODUTOS--------------- */
+
+.faixa_verde{
+    background-color: #32452c;
+    width: 1920px;
+}
+
+.faixa_verde span{
+
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 20px;
+    display: flex;
+    justify-content: space-around;
+    color: #e6d3b3;
+    letter-spacing: 5px;
+}
+
+/* -------------------CONTAINER PRODUTOS--------------------- */
+
+.container_produtos{
+    width: 1920px;
+    background-color: #e6d3b3;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: ;
+
+}
+
+.container_produtos img{
+    width: 138px;
+
+}
+
+.container_botoes{
+    width: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
