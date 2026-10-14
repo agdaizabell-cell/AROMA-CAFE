@@ -21,26 +21,211 @@
     letter-spacing: 5px;
 }
 
-/* -------------------CONTAINER PRODUTOS--------------------- */
+/* -------------------CONTAINER PRODUTOS CABEÇARIO--------------------- */
 
 .container_produtos{
     width: 1920px;
-    background-color: #e6d3b3;
+    background-color: #f4eada;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding: ;
-
+    padding: 16px;
 }
 
 .container_produtos img{
-    width: 138px;
+    width: 150px;
+    
+}
+
+.container_botoes button{
+    width: 42PX;
+    border: none;
+    background-color:transparent;
+}
+.container_links{
+    display:flex;
+    justify-content:space-between;
+    width: 452px;
+    font-size: 16px;
+}
+.container_links a{
+    text-decoration: none;
+    color: #3e2a1f;
+    font-weight:600;
+    text-transform:uppercase;
+}
+
+/* ----------------------PRODUTOS BANNER------------------------ */
+
+
+.banner_container{
+    background-color: #e6d3b3;
+    /* padding: 195px; */
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.produtos_banner img{
+    /* width: 560px; */
+    height: 444px;
+}
+
+.box_texto_produtos{
 
 }
 
-.container_botoes{
-    width: 30px;
+.linha1{
+    font-weight:600;
+    font-size:15px;
+    letter-spacing:2px;
+    text-transform:uppercase;
+    display:inline-block;
+    margin-bottom: 10px;
+}
+
+.linha2{
+    font-size: 60px;
+     display:inline-block;
+    margin-bottom: 5px;
+
+}
+
+.linha3{
+    font-size:40px;
+     display:inline-block;
+    margin-bottom: 20px;
+
+}
+.linha4{
+    font-size: 30px;
+     display:inline-block;
+    margin-bottom: 5px;
+}
+
+/* ----------------------CABEÇARIO CATALOGO--------------------------- */
+
+    /* Centraliza ou posiciona o container onde preferir */
+.search-container {
+  width: 100%;
+  max-width: 600px; /* Ajuste o tamanho máximo conforme seu layout */
+  margin: 20px auto;
+  font-family: sans-serif;
+}
+
+/* Estilização da barra de pesquisa */
+.search-form {
+  display: flex;
+  align-items: center;
+  background-color: #f3f3f3; /* Cor de fundo cinza claro semelhante à imagem */
+  padding: 12px 6px;        /* Espaçamento interno */
+  border: 1px solid transparent;
+  transition: all 0.3s ease;
+}
+
+/* Efeito ao clicar/focar na barra de pesquisa */
+.search-form:focus-within {
+  background-color: #fff;
+  border-color: #d1d5db; /* Borda sutil ao focar */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05); /* Sombra suave */
+}
+
+/* Estilização do ícone de lupa */
+.search-icon {
+  width: 20px;
+  height: 20px;
+  color: #9ca3af; /* Cor cinza para o ícone */
+  margin-right: 12px;
+  flex-shrink: 0;
+}
+
+/* Estilização do input de texto */
+.search-input {
+  border: none;
+  background: transparent;
+  outline: none;
+  width: 100%;
+  font-size: 16px;
+  color: #374151;
+}
+
+/* Estilo do texto placeholder (o texto cinza claro de fundo) */
+.search-input::placeholder {
+  color: #9ca3af;
+}
+
+/* --------------------------------CORPO CATALOGO--------------------------------------------- */
+
+.corpo_catalogo{
+background-color: #f4eada;
+padding: 37px;
+/* width: 1920px; */
+    
+}
+.foto_compra img{
+    border-radius: 10px;
+    width: 390px;
+}
+ .box_texto_principal{
+    display: inline-grid;
+    padding: 10px;
+    /* color:#3e2a1f; */
+ }
+ .linha1{
+    color: #ab8b3d
+ }
+ .linha2{
+    color:#3e2a1f;
+    font-size: 43px;    
+ }
+ .linha3{
+    font-size: 20px;
+    color:#3e2a1f
+ }
+ .box_descriçao {
+    display: inline-grid;
+
+ }
+ .foto_compra{
+    display: revert-layer;
+    padding: 30px;
+ }
+ .descrição_produto{
+
+ }
+
+ /* -----------------------------FOOTER-------------------------------------------- */ */
+
+footer{
+    background-color: #f4eada;
+    height: 110px;
+    display: flex;
+    align-items: center;
+
+}
+
+.footer_container{
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
+.nav_footer{
+    display: flex;
+    justify-content: space-between;
+    width: 160px;
+}
+.footer_container span,
+.nav_footer a{
+      /* font-family: "Hanken Grotesk", sans-serif;   */
 
+}
+.nav_footer a{
+    text-decoration: none;
+    color: #747878;
+}
+.footer_container img{
+    width: 100px;
+}
+.container_footer{
+    background-color: #f4eada;
+}
