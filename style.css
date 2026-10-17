@@ -11,7 +11,7 @@
 
 .faixa_verde{
     background-color: #32452c;
-    width: 1920px;
+    width: 1905px;
 }
 
 .faixa_verde span{
@@ -29,12 +29,12 @@
 /* -------------------CONTAINER PRODUTOS CABEÇARIO--------------------- */
 
 .container_produtos{
-    width: 1920px;
-    background-color: #f4eada;
-    display: flex;
-    justify-content: space-around;
+   display: flex;
+    justify-content: space-between;
     align-items: center;
-    padding: 3px;
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto;
 }
 
 .container_produtos img{
@@ -224,16 +224,19 @@ margin: 0 auto;
     text-transform: uppercase;
     font-weight: 600;
     letter-spacing: 2px;
+     font-family: "Montserrat", sans-serif;
  }
 
  .linha_descricao2{
     color:#3e2a1f;
-    font-size: 43px;    
+    font-size: 43px; 
+     font-family: "Lora", serif;   
  }
 
  .linha_descricao3{
     font-size: 20px;
     color:#3e2a1f;
+     font-family: "Montserrat", sans-serif;
 
  }
  hr{
@@ -257,20 +260,140 @@ margin: 0 auto;
     justify-content: space-between;
  }
 
+ /* -------------------COMENTARIOS-------------------- */
+/* Container Principal Verde */
+.reviews-container {
+  background-color: #1e4529; /* Verde escuro do AROMA CAFE */
+  color: #e6d3b3;
+  padding: 40px 48px;
+  border-radius: 32px;
+  display: grid;
+  grid-template-columns: 1.2fr 1fr 1fr 1fr;
+  gap: 32px;
+  max-width: 1200px;
+  width: 100%;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+/* Estilo geral dos cards */
+.review-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Estrelas */
+.stars {
+  color: #ab8b3d; /* Cor dourada/bege das estrelas */
+  font-size: 14px;
+  letter-spacing: 2px;
+  margin-bottom: 12px;
+}
+
+/* Coluna Principal (Nota e Título) */
+.main-card .badge {
+  font-size: 10px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #ab8b3d;
+  font-weight: 600;
+  display: block;
+  margin-bottom: 8px;
+   font-family: "Montserrat", sans-serif;
+}
+
+.main-card .title {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 26px;
+  font-weight: 600;
+  font-style: italic;
+  line-height: 1.2;
+  margin-bottom: 9px;
+   font-family: "Lora", serif;
+}
+
+.main-card .subtitle {
+  font-size: 30px;
+  color: #ab8b3d;
+  margin-bottom: 24px;
+  font-family: "Marck Script", cursive;
+}
+
+.rating-box {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.rating-box .score {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.rating-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.rating-details .stars {
+  margin-bottom: 2px;
+  font-size: 12px;
+}
+
+.total-reviews {
+  font-size: 9px;
+  color: rgba(255, 255, 255, 0.6);
+  text-transform: lowercase;
+   font-family: "Montserrat", sans-serif;
+}
+
+/* Depoimentos */
+.quote {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.35;
+  margin-bottom: 20px;
+   font-family: "Montserrat", sans-serif;
+}
+
+.author {
+  font-size: 10px;
+  letter-spacing: 1px;
+  color: rgba(255, 255, 255, 0.7);
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.author .name {
+  font-weight: 600;
+}
+
+.author .dot {
+  font-size: 8px;
+  opacity: 0.5;
+}
+
+.author .product {
+  opacity: 0.8;
+}
 
 
  /* -----------------------------FOOTER-------------------------------------------- */ */
 
-.footer_home{
-    max-width: 1200px;
-    width: 95%;
-    height: 100px;
+footer .blablabla{
+    display: flex;
+    justify-content: center;
     background-color: #f4eada;
+    height: 200px;
 }
 
 
 .footer_container{
-  width: 113%;
+  width: 95%;
+  max-width: 1200px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -293,5 +416,62 @@ margin: 0 auto;
 }
 .footer_container img{
     width: 150px;
+}
+
+/* ----------------------ALTERACOES PARA RESPONSIVIDADE-------------------------------- */
+
+.carrinho{
+  display:none;
+}
+
+
+
+
+
+
+@media screen and (max-width: 1262px) {
+
+  /* -------------------CABECARIO------------------------- */
+  .faixa_verde{
+    width: 376%;
+  }
+
+  .container_produtos{
+    width: 358%;
+    display:flex;
+    justify-content: space-around;
+  }
+  
+  
+  
+  .carrinho{
+  display:block;
+  width: 42px;
+  color: #3e2a1f;
+  background-color: transparent;
+  border: none;
+  }
+
+  .container_links{
+    display:none;
+  }
+
+  /* -------------------------------HOME----------------------------------- */
+  .foto_container{
+    width: 360px;
+
+  }
+
+  .banner_container{
+    width: 374%;
+  }
+
+  /* --------------------PRODUTOS------------------------------- */
+
+  .search-container{
+    width: 388%;
+    max-width: 1358%;
+  }
+
 }
 
