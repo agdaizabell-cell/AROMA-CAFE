@@ -429,15 +429,15 @@ footer .blablabla{
 
 
 
-@media screen and (max-width: 1262px) {
+@media screen and (max-width: 1200px) {
 
   /* -------------------CABECARIO------------------------- */
   .faixa_verde{
-    width: 376%;
+    width: 1200px;
   }
 
   .container_produtos{
-    width: 358%;
+    width: 1200px;
     display:flex;
     justify-content: space-around;
   }
@@ -463,15 +463,21 @@ footer .blablabla{
   }
 
   .banner_container{
-    width: 374%;
+    width: 1200px;
   }
 
   /* --------------------PRODUTOS------------------------------- */
 
   .search-container{
-    width: 388%;
-    max-width: 1358%;
+    /* width: 388%;
+    max-width: 1358%; */
   }
-
+.cafes{
+  display: block;
+}
+.cafes2{
+  display: flex;
+  flex-direction: column;
+}
 }
 
